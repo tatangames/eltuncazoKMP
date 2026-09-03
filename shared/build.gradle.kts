@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.androidMultiplatformLibrary)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    alias { libs.plugins.kotlinSerialization }
 }
 
 kotlin {
@@ -78,6 +79,9 @@ kotlin {
 
             // Orbit MVI
             implementation(libs.orbit.core)
+
+            // Icons
+            implementation(libs.material.icons.extended)
         }
 
         iosMain.dependencies {
