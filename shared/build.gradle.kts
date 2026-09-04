@@ -82,6 +82,8 @@ kotlin {
 
             // Orbit MVI
             implementation(libs.orbit.core)
+            implementation(libs.orbit.viewmodel)
+            implementation(libs.orbit.compose)
 
             // Icons
             implementation(libs.material.icons.extended)
