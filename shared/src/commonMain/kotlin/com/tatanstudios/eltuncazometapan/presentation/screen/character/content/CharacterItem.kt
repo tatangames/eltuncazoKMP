@@ -1,4 +1,4 @@
-package com.tatanstudios.eltuncazometapan.presentation.viewmodel.character.content
+package com.tatanstudios.eltuncazometapan.presentation.screen.character.content
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

@@ -30,7 +30,7 @@ import com.tatanstudios.eltuncazometapan.presentation.model.NavigationBarItemMod
 import com.tatanstudios.eltuncazometapan.presentation.navigation.Screen
 import com.tatanstudios.eltuncazometapan.presentation.screen.character.CharacterScreen
 import com.tatanstudios.eltuncazometapan.presentation.screen.EpisodeScreen
-import com.tatanstudios.eltuncazometapan.presentation.screen.LocationScreen
+import com.tatanstudios.eltuncazometapan.presentation.screen.location.LocationScreen
 
 @Composable
 @Preview

@@ -1,6 +1,7 @@
 package com.tatanstudios.eltuncazometapan.data.remote
 
 import com.tatanstudios.eltuncazometapan.data.model.CharacterResponse
+import com.tatanstudios.eltuncazometapan.data.model.LocationResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get
@@ -13,6 +14,12 @@ class RickAndMortyApi(
 
     suspend fun getCharacters(page: Int): CharacterResponse{
         return httpClient.get("/api/character"){
+            parameter("page", page)
+        }.body()
+    }
+
+    suspend fun getLocation(page: Int): LocationResponse{
+        return httpClient.get("/api/location"){
             parameter("page", page)
         }.body()
     }
