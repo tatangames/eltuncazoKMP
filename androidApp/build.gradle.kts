@@ -10,6 +10,7 @@ kotlin {
         jvmTarget = JvmTarget.JVM_11
     }
 }
+
 dependencies {
     implementation(project(":shared"))
 
@@ -17,6 +18,10 @@ dependencies {
 
     implementation(libs.compose.uiToolingPreview)
     debugImplementation(libs.compose.uiTooling)
+
+    // ✅ Agrega estas:
+    implementation(libs.koin.android)
+    implementation(libs.koin.core)
 }
 
 android {

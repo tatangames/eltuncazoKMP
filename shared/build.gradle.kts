@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.androidMultiplatformLibrary)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
-    alias { libs.plugins.kotlinSerialization }
+    alias(libs.plugins.kotlinSerialization)
 }
 
 kotlin {
@@ -45,6 +45,9 @@ kotlin {
             implementation(libs.compose.uiToolingPreview)
             implementation(libs.compose.uiTooling)
 
+            // Koin Android
+            implementation(libs.koin.android)
+
             // Ktor - motor Android
             implementation(libs.ktor.client.okhttp)
         }
@@ -82,6 +85,10 @@ kotlin {
 
             // Icons
             implementation(libs.material.icons.extended)
+
+            implementation(libs.ktor.client.content.negotiation)
+            implementation(libs.ktor.serialization.kotlinx.json)
+
         }
 
         iosMain.dependencies {
